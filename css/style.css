@@ -1,0 +1,81 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Jasne tło */
+}
+
+/* Style dla drzewka katalogów */
+.directory-tree, .directory-tree ul {
+    list-style-type: none;
+    padding-left: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+.directory-tree li {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #333;
+}
+
+.directory-tree li.directory:before {
+    content: '📂 ';
+    color: #6b7280; /* Szary kolor dla ikon folderów */
+}
+
+.directory-tree li.file:before {
+    content: '📄 ';
+    color: #4a5568; /* Niebieskoszary kolor dla ikon plików */
+    margin-left: 20px; /* Dodatkowe wcięcie dla plików */
+}
+
+/* Style dla drzewa katalogów w sekcji "Tree of Files" */
+.directory-tree {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.directory-tree h2 {
+    margin-top: 0;
+}
+
+/* Style dla bloków kodu */
+.file-content {
+    background-color: #fff; /* Białe tło dla treści pliku */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+.file-content h2 {
+    margin-bottom: 10px;
+}
+
+.file-content pre {
+    background-color: #eef2f7; /* Jasnoniebieskie tło dla kodu */
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.file-content code {
+    font-family: monospace;
+    color: #1a202c; /* Ciemny kolor tekstu */
+}
+
+.copy-button {
+    background-color: #4CAF50; /* Zielony */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.copy-button:hover {
+    background-color: #45a049;
+}
